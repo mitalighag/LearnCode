@@ -1,0 +1,49 @@
+.courses {
+  text-align: center;
+  padding: 50px;
+  background-color: #b2cae3;
+}
+
+.courses-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Responsive Course Grid */
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CTA Button - Centered Below Course Cards */
+.courses-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-courses-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.view-courses-btn:hover {
+  background: #0056b3;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,118 @@
+/* Footer Styles */
+.footer {
+  background: #1a202c; /* Dark navy background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 60px;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* LearnCode (Align Left) */
+.footer-section:first-child {
+  text-align: left;
+}
+
+/* Quick Links & Join Us Titles */
+.footer-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left; /* Aligns heading properly */
+  color: white;
+}
+
+.footer-section p {
+  color: white;
+  font-size: medium;
+}
+
+/* Quick Links & Join Us Lists (Perfectly Centered Under Headings) */
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-left: 0; /* Ensures lists align exactly under headings */
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons svg {
+  font-size: 24px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #ffffff;
+}
+
+/* Horizontal Line */
+.footer-line {
+  width: 100%;
+  margin: 30px auto;
+  border: 0.5px solid #d1d5db;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section ul {
+    text-align: center; /* Centers lists in mobile view */
+  }
+
+  .footer-line {
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+.add-course-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-course-container h2,
+.add-course-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-course-container input[type="text"],
+.add-course-container input[type="number"],
+.add-course-container input[type="file"],
+.add-course-container input[type="email"],
+.add-course-container textarea,
+.add-course-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.add-course-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.add-course-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+.add-course-container input[type="radio"],
+.add-course-container input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.add-course-container button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-container button:hover {
+  background-color: #0056b3;
+}
+
+/* .add-course-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.add-course-container ul li {
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-course-container ul li button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+}
+
+.add-course-container ul li button:nth-child(3) {
+  background-color: #ffc107;
+}
+
+.add-course-container ul li button:hover {
+  opacity: 0.9;
+} */
+.add-course-container button + button {
+  margin-left: 10px;
+}

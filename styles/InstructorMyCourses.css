@@ -1,0 +1,144 @@
+.my-courses-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.my-courses-header h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.add-course-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-btn:hover {
+  background-color: #0056b3;
+}
+
+.loading-text, .no-courses-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 30px;
+}
+
+.my-courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.my-courses-table th, .my-courses-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.my-courses-table th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+}
+
+.my-courses-table td img.thumbnail {
+  max-width: 100px;
+  max-height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.published {
+  color: green;
+}
+
+.status.draft {
+  color: orange;
+}
+
+.action-buttons button {
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.my-courses-table tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.my-courses-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .my-courses-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .add-course-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .my-courses-table th, .my-courses-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .my-courses-table img.thumbnail {
+    max-width: 80px;
+    max-height: 50px;
+  }
+}

@@ -1,0 +1,115 @@
+/* Contact Section */
+.contact-section {
+  background-color: #bdcfe3;
+  color: white;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.contact-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Left: Image */
+.contact-image {
+  width: 40%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 500px; /* Adjusted height for better proportion */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Right: Form */
+.contact-form {
+  flex: 1;
+  padding-left: 80px; /* Reduced padding for better balance */
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stack contact info */
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  font-size: 1rem; /* Better readability */
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Adjusting textarea separately */
+.contact-form textarea {
+  border-radius: 10px;
+  height: 150px;
+}
+
+/* Submit Button */
+.contact-form button {
+  background: #007bff ;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+}
